@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/hero-img.png";
+import heroImg from "../../assets/Design uten navn.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import twitterLight from "../../assets/twitter-light.svg";
@@ -9,9 +9,9 @@ import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import CV from "../../assets/cv.pdf";
-import { useTheme } from "../../common/ThemeContext.jsx";
+import { useTheme } from "../../common/ThemeContext";
 
-export default function Hero() {
+function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === "light" ? sun : moon;
@@ -23,44 +23,45 @@ export default function Hero() {
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img
-          className={styles.hero}
           src={heroImg}
-          alt="Foto de perfil de Fábio Thierry"
+          className={styles.hero}
+          alt="Profile picture of Harris Johnsen"
         />
         <img
           className={styles.colorMode}
           src={themeIcon}
-          alt="Color Mode Icon"
+          alt="Color mode icon"
           onClick={toggleTheme}
         />
       </div>
       <div className={styles.info}>
         <h1>
-          Fábio <br />
-          Thierry
+          Harris
+          <br />
+          Johnsen
         </h1>
-        <h2>Desenvolvedor Full Stack</h2>
+        <h2>Frontend Developer</h2>
         <span>
-          <a href="http://lattes.cnpq.br/9901931981992981">
-            <img src={twitterIcon} alt="Twitter Icon" />
+          <a href="https://twitter.com/" target="_blank">
+            <img src={twitterIcon} alt="Twitter icon" />
           </a>
-          <a href="https://github.com/FabioThierry">
-            <img src={githubIcon} alt="Github Icon" />
+          <a href="https://github.com/" target="_blank">
+            <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://www.linkedin.com/in/fabio-thierry/">
-            <img src={linkedinIcon} alt="Linkedin Icon" />
+          <a href="https://linkedin.com/" target="_blank">
+            <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
         <p className={styles.description}>
-          Olá, eu sou um desenvolvedor Full Stack. Sou Mestre em Inovação em
-          Tecnologias Educacionais. Sou autodidata e gosto de aprender e me
-          divertir. Atualmente estou em busca da minha primeira oportunidade de
-          emprego como desenvolvedor Full Stack.
+          With a passion for developing modern React web apps for commercial
+          businesses.
         </p>
         <a href={CV} download>
-          <button className="hover">Curriculum</button>
+          <button className="hover">Resume</button>
         </a>
       </div>
     </section>
   );
 }
+
+export default Hero;
