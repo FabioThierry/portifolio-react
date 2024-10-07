@@ -13,26 +13,26 @@ function Projects() {
         <ProjectCard
           src={viberr}
           link={"https://viberr.netlify.app/"}
-          h3="Viberr"
-          p={"Projeto de música"}
+          h3="Geojogos"
+          p={"Jogos Educacionais"}
         />
         <ProjectCard
           src={freshBurger}
           link={"https://viberr.netlify.app/"}
-          h3="Viberr"
-          p={"Hamburger Restaurant"}
+          h3="UFRN no Minecraft"
+          p={"Jogos Educacionais"}
         />
         <ProjectCard
           src={hipsster}
           link={"https://viberr.netlify.app/"}
-          h3="Viberr"
-          p={"Glasses shop"}
+          h3="UFCG no Minecraft"
+          p={"Jogos Educacionais"}
         />
         <ProjectCard
           src={fitLift}
           link={"https://viberr.netlify.app/"}
-          h3="Viberr"
-          p={"Fitness Gym"}
+          h3="Repositório HGE"
+          p={"Desenvolvimento Web"}
         />
       </div>
     </section>
