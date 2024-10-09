@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/hero-img2.png"; //TODO change to hero-img.png
+import heroImg from "../../assets/hero-img.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import twitterLight from "../../assets/lattes.svg";
@@ -8,7 +8,7 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/Fabio_Thierry__CV.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
@@ -40,7 +40,7 @@ function Hero() {
           Thierry
         </h1>
         <h2>
-          Especialista em Tecnologias Educacionais <br />e Geografia Digital
+          Mestre em Tecnologias Educacionais <br />& Geografia Digital
         </h2>
         <span>
           <a href="https://www.linkedin.com/in/fabio-thierry/" target="_blank">
@@ -59,7 +59,7 @@ function Hero() {
           Geografia e Programação.
         </p>
         <a href={CV} download>
-          <button className="hover">Currículo</button>
+          <button className="hover">Curriculum</button>
         </a>
       </div>
     </section>

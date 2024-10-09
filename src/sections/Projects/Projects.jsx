@@ -1,8 +1,8 @@
 import styles from "./ProjectsStyles.module.css";
-import viberr from "../../assets/viberr.png";
-import freshBurger from "../../assets/fresh-burger.png";
-import hipsster from "../../assets/hipsster.png";
-import fitLift from "../../assets/fitlift.png";
+import geojogos from "../../assets/geojogos.png";
+import ufrnMinecraft from "../../assets/ufrn-minecraft.png";
+import ufcgMinecraft from "../../assets/ufcg-minecraft.png";
+import hge from "../../assets/logo-hge.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -11,26 +11,26 @@ function Projects() {
       <h1 className="sectionTitle">Projetos</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
-          link={"https://viberr.netlify.app/"}
+          src={geojogos}
+          link={"https://ggeojogos.wixsite.com/geojogos"}
           h3="Geojogos"
           p={"Jogos Educacionais"}
         />
         <ProjectCard
-          src={freshBurger}
-          link={"https://viberr.netlify.app/"}
+          src={ufrnMinecraft}
+          link={"https://github.com/FabioThierry/UFRN_Minecraft"}
           h3="UFRN no Minecraft"
           p={"Jogos Educacionais"}
         />
         <ProjectCard
-          src={hipsster}
-          link={"https://viberr.netlify.app/"}
+          src={ufcgMinecraft}
+          link={"https://gemac.itch.io/minecraft-ufcg"}
           h3="UFCG no Minecraft"
           p={"Jogos Educacionais"}
         />
         <ProjectCard
-          src={fitLift}
-          link={"https://viberr.netlify.app/"}
+          src={hge}
+          link={"https://hge.geojogos.com.br/"}
           h3="Repositório HGE"
           p={"Desenvolvimento Web"}
         />

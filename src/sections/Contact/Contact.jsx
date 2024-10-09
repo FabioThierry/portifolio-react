@@ -14,7 +14,7 @@ function Contact() {
 
   return (
     <section id="contact" className={styles.container}>
-      <h1 className="sectionTitle">Contact</h1>
+      <h1 className="sectionTitle">Contato</h1>
       <form action="" method="post" onSubmit={handleSubmit}>
         <div className="formGroup">
           <label htmlFor="name" hidden>
@@ -24,7 +24,7 @@ function Contact() {
             type="text"
             name="name"
             id="name"
-            placeholder="Name"
+            placeholder="Seu nome"
             required
           />
         </div>
@@ -36,7 +36,7 @@ function Contact() {
             type="text"
             name="email"
             id="email"
-            placeholder="Email"
+            placeholder="Seu Email"
             required
           />
         </div>
@@ -47,7 +47,7 @@ function Contact() {
           <textarea
             name="message"
             id="message"
-            placeholder="Message"
+            placeholder="Escreva sua mensagem aqui..."
             required
           ></textarea>
         </div>
@@ -59,7 +59,7 @@ function Contact() {
           />
         </div>
 
-        <input className="hover btn" type="submit" value="Submit" />
+        <input className="hover btn" type="submit" value="Enviar" />
       </form>
     </section>
   );
