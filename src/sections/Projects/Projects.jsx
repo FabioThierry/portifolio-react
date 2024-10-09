@@ -14,6 +14,7 @@ function Projects() {
           src={geojogos}
           link={"https://ggeojogos.wixsite.com/geojogos"}
           h3="Geojogos"
+          year={"2021"}
           p={"Jogos Educacionais"}
         />
         <ProjectCard
